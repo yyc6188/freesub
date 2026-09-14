@@ -12,17 +12,15 @@ proxies:
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇦🇹 AT 02 - xiaohe
-  type: vless
-  server: 152.53.1.40
-  port: 443
-  uuid: edde565e-41f5-400e-84ea-7b87a3e84488
+  type: vmess
+  server: zfd-boardv2.kunlun01dns.com
+  port: 16308
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
-  servername: at.quattro-tech.ru
-  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select

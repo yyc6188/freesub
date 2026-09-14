@@ -19,9 +19,9 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
   type: vless
-  server: 128.241.25.11
+  server: 128.241.25.3
   port: 30021
-  uuid: 40ca0d8c-0641-4e2d-a701-9fd8330daf6d
+  uuid: afec813e-a5c7-432d-be48-2803c30eea4e
   udp: true
   tls: true
   skip-cert-verify: true
@@ -33,18 +33,18 @@ proxies:
       Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
 - name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
   type: vless
-  server: 57.129.130.10
-  port: 52014
-  uuid: 395bab7e-302a-42b4-bac7-8acb7d36fdf3
+  server: 104.24.219.225
+  port: 443
+  uuid: c2c3de71-5ec5-430c-b096-81969b16ff8d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+  servername: cdnfree.abdollahvand2.ir
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /
     headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+      Host: cdnfree.abdollahvand2.ir
 proxy-groups:
 - name: PROXIES
   type: select
