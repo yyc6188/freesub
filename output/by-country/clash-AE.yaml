@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaohe
   type: vless
-  server: 84.235.244.108
+  server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -19,30 +19,32 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
   type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: 128.241.25.11
+  port: 30021
+  uuid: 40ca0d8c-0641-4e2d-a701-9fd8330daf6d
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
   network: ws
   ws-opts:
-    path: /
+    path: /@Marisa_kristi
     headers:
-      Host: uae.unixzone.us
+      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
 - name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
   type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: 57.129.130.10
+  port: 52014
+  uuid: 395bab7e-302a-42b4-bac7-8acb7d36fdf3
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
   network: ws
   ws-opts:
-    path: /
+    path: /@Marisa_kristi
     headers:
-      Host: uae.unixzone.us
+      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
