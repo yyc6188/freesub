@@ -6,31 +6,32 @@ log-level: info
 proxies:
 - name: 🇸🇨 SC 01 - xiaohe
   type: vless
-  server: 154.218.15.250
-  port: 2083
-  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
+  server: 202.181.177.8
+  port: 8443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: proxy-1cu.pages.dev
+  servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /channels/act
     headers:
-      Host: proxy-1cu.pages.dev
+      Host: cdn8848.776676.xyz
 - name: 🇸🇨 SC 02 - xiaohe
   type: vless
-  server: 154.197.75.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 129.151.64.169
+  port: 31867
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /files
     headers:
-      Host: vms.lifetime37.workers.dev
+      Host: cdn8848.776676.xyz
 - name: 🇸🇨 SC 03 - xiaohe
   type: vless
   server: 45.130.125.73
@@ -45,20 +46,6 @@ proxies:
     path: /api/ws
     headers:
       Host: web-app-aug8yr.app-f1qsy1.workers.dev
-- name: 🇸🇨 SC 04 - xiaohe
-  type: vless
-  server: 154.211.8.227
-  port: 2087
-  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: proxy-34l.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: proxy-34l.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,7 +54,6 @@ proxy-groups:
   - 🇸🇨 SC 01 - xiaohe
   - 🇸🇨 SC 02 - xiaohe
   - 🇸🇨 SC 03 - xiaohe
-  - 🇸🇨 SC 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -76,6 +62,5 @@ proxy-groups:
   - 🇸🇨 SC 01 - xiaohe
   - 🇸🇨 SC 02 - xiaohe
   - 🇸🇨 SC 03 - xiaohe
-  - 🇸🇨 SC 04 - xiaohe
 rules:
 - MATCH,PROXIES
