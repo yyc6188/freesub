@@ -6,13 +6,6 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - xiaohe
   type: ss
-  server: 2.56.174.133
-  port: 8
-  cipher: chacha20-ietf-poly1305
-  password: LPgApKBzs8B9vxoSCCMV9Q
-  udp: true
-- name: 🇵🇱 PL 02 - xiaohe
-  type: ss
   server: 146.59.116.19
   port: 17000
   cipher: aes-256-gcm
@@ -24,13 +17,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇵🇱 PL 01 - xiaohe
-  - 🇵🇱 PL 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇵🇱 PL 01 - xiaohe
-  - 🇵🇱 PL 02 - xiaohe
 rules:
 - MATCH,PROXIES
