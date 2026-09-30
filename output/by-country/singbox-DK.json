@@ -6,14 +6,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇾 MY 01 - xiaohe"
+        "🇩🇰 DK 01 - xiaohe",
+        "🇩🇰 DK 02 - xiaohe",
+        "🇩🇰 DK 03 - xiaohe",
+        "🇩🇰 DK 04 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇾 MY 01 - xiaohe"
+        "🇩🇰 DK 01 - xiaohe",
+        "🇩🇰 DK 02 - xiaohe",
+        "🇩🇰 DK 03 - xiaohe",
+        "🇩🇰 DK 04 - xiaohe"
       ],
       "url": "https://www.google.com/generate_204"
     },
