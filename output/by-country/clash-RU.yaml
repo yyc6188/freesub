@@ -12,13 +12,6 @@ proxies:
   password: mhXYDvaSfHzHZXBswC/zo/o8VqdU3XSBpwWx050Y6MU=
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  type: ss
-  server: 90.156.203.62
-  port: 5112
-  cipher: chacha20-ietf-poly1305
-  password: VVlAff77CnAU43Aoc5j15Y
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   type: vless
   server: 217.19.122.200
   port: 443
@@ -39,7 +32,6 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -47,6 +39,5 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
 rules:
 - MATCH,PROXIES
