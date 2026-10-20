@@ -53,19 +53,21 @@ proxies:
   servername: apple.com
   client-fingerprint: chrome
 - name: 🇦🇺 澳大利亚 (Australia) 05 - xiaohe
-  type: vless
-  server: 104.18.155.229
-  port: 443
-  uuid: 42026ed0-7d74-4585-8e46-0fe6aa4d665a
+  type: vmess
+  server: 66.235.200.145
+  port: 8443
+  uuid: 6006c9a2-c0a2-4cda-80f2-405b0d790fc8
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: www.genflix.co.id.r3xxe.eu.cc
+  servername: aus.frnhk.xyz
   network: ws
   ws-opts:
-    path: /au-do
+    path: /Sydney3
     headers:
-      Host: www.genflix.co.id.r3xxe.eu.cc
+      Host: aus.frnhk.xyz
 proxy-groups:
 - name: PROXIES
   type: select
