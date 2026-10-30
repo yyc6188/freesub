@@ -40,17 +40,12 @@ proxies:
   skip-cert-verify: true
 - name: 🇧🇾 BY 04 - xiaohe
   type: vless
-  server: 178.172.227.228
-  port: 14430
-  uuid: b6e5dc56-836f-48c1-9163-b0b0b43b647d
+  server: 178.172.227.124
+  port: 10443
+  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 178.172.227.228
 - name: 🇧🇾 BY 05 - xiaohe
   type: vless
   server: 178.172.227.228
@@ -79,31 +74,6 @@ proxies:
       Host: 178.172.227.228
 - name: 🇧🇾 BY 07 - xiaohe
   type: vless
-  server: 193.58.121.95
-  port: 2053
-  uuid: b6c29ae7-4748-4049-b642-b695c0d2c776
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 6RshLCSAs31qGRa_tWi63KClbh2Kzj9ooXpdaPJKbjs
-  servername: vk.ru
-  client-fingerprint: ''
-- name: 🇧🇾 BY 08 - xiaohe
-  type: vless
-  server: 178.172.227.228
-  port: 14430
-  uuid: b6e5dc56-836f-48c1-9163-b0b0b43b647d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 178.172.227.228
-- name: 🇧🇾 BY 09 - xiaohe
-  type: vless
   server: 178.172.227.124
   port: 14430
   uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
@@ -127,8 +97,6 @@ proxy-groups:
   - 🇧🇾 BY 05 - xiaohe
   - 🇧🇾 BY 06 - xiaohe
   - 🇧🇾 BY 07 - xiaohe
-  - 🇧🇾 BY 08 - xiaohe
-  - 🇧🇾 BY 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -141,7 +109,5 @@ proxy-groups:
   - 🇧🇾 BY 05 - xiaohe
   - 🇧🇾 BY 06 - xiaohe
   - 🇧🇾 BY 07 - xiaohe
-  - 🇧🇾 BY 08 - xiaohe
-  - 🇧🇾 BY 09 - xiaohe
 rules:
 - MATCH,PROXIES
