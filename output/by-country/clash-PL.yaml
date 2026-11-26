@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇴 RO 01 - xiaohe
+- name: 🇵🇱 PL 01 - xiaohe
   type: vless
-  server: 185.247.224.206
+  server: 46.243.232.149
   port: 443
-  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
+  uuid: b432a23a-acff-425c-bf69-70480cd6ed09
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: inlay.merlano.monster
+  servername: devcdn.icu
   network: ws
   ws-opts:
-    path: /api/de3/stream
+    path: /edge/chunk/b2265efffa29/
     headers:
-      Host: inlay.merlano.monster
+      Host: devcdn.icu
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇷🇴 RO 01 - xiaohe
+  - 🇵🇱 PL 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇴 RO 01 - xiaohe
+  - 🇵🇱 PL 01 - xiaohe
 rules:
 - MATCH,PROXIES
